@@ -17,15 +17,19 @@ birth_year = input("enter the birthday year ")
 age = 2023 - int(birth_year)
 print("the age is",age)
 
-side_name = "rajesh is male"
-print(side_name.find("j"))
-print("the data type of side name is ==> " + type(side_name))  
-# string cannot concatenate with type of in python 
-print(side_name.replace(side_name, "the gender of "+ side_name))
+side_name = "frankok"
+print(side_name.find("k"))
+print("the data type of side name is ==> " , type(side_name))  
+# string cannot concatenate with type in python so instead of "+" rather "," is used 
+# print(side_name.replace(side_name, "frankok got replaced to a this sentence written now"))
 print(side_name.replace("male", "a friend of frankok charlie"))
+print(side_name)
 
-# letters = "abcdefghijklmnopqrstuvwxyz"
-# backwards = letters[16:13:-1]
-# print(backwards)
-# newbackwards = letters[24:16:-3]
-# print(newbackwards)
+letters = "abcdefghijklmnopqrstuvwxyz"
+backwards = letters[16:13:-1]
+print(backwards)
+newbackwards = letters[24:16:-3]
+print(newbackwards)
+
+
+
