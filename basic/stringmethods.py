@@ -46,9 +46,6 @@ print("escape_charactered_final_result==>:",escape_charactered_final_result)
 
 # *************************************testing******************
 
-from lorem.text import TextLorem
-
-Lorem = TextLorem()
 
 # Generate a dummy paragraph
 new_dummy_paragraph = Lorem.paragraph()
@@ -62,9 +59,12 @@ print("final_data receeived======>:", final_data)
 # ********************************************************************
 tst_text = "my name is frankok charlie"
 found = tst_text.find("name") ## this will find the index if "name" is there but if it is not there it will not throw any error
- 
-found1 = tst_text.index("nanas") ## this will also find the index number of the given input 
+#  ---------------
+# found1 = tst_text.index("nanas")
+## this will also find the index number of the given input  
+# # but if the input is not there then it will throw specific error.
+#  ---------------         
+             
 print(found)
-                            # but if the input is not there then it will throw specific error.
 
-print(found1)
+# print(found1)
