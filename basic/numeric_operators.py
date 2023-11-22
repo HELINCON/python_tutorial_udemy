@@ -2,13 +2,13 @@
 
 a=12
 b=3
-print("a / b ==> ",a/b)            # answer - 4.0
-print("a // b ==> ",a // b)        # answer - 4 integer division ,rounded down towards minus infinity
-print("a % b ==> ",a % b)          # answer - 0 modulo: the remainder after integer division
+print("a=12 / b=3 ==> ",a/b)            # answer - 4.0
+print("a=12 // b=3 ==> ",a // b)        # answer - 4 integer division ,rounded down towards minus infinity
+print("a=12 % b=3 ==> ",a % b)          # answer - 0 modulo: the remainder after integer division
 
 c = 16
 d = 5
-print("c // d ==> ",c // d)        # answer - 3 rounded down towards minus infinity 
+print("c=16 // d=5 ==> ",c // d)        # answer - 3 rounded down towards minus infinity 
                                    # but it takes a lot of time and all are computed at the same time.
 
 k = 8j 

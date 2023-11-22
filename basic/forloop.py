@@ -1,21 +1,22 @@
 # normal loop
 
-numbers = [1,2,3,4,5,6,7,8,9]
+numbers = [10,2,3,4,5,6,7,8,9]
 
 for i in numbers:
     print(i)
-    if i < 4:
+    if i < 88:
         print("enter more")
     else :
         print("limit sxceeded")
         break
-    
+
+print("*********************************************")
 # for spescific limit set :
 # ------------------------
 # in the below function last parameter is the number of elemets to be skipped and this is optional
 
-for i in range(numbers[0], numbers[7],2):
-    print("second loop",i,numbers[7]) # here the output of i will be till 7th index 
+for i in range(0,numbers[0],2):
+    print("value of i:",i) # here the output of i will be till 7th index 
                                       #  as last limit is numbers[7] whose value is 8
                         
 # **************************************************************************                                 
@@ -77,3 +78,13 @@ for color in colors:
         col1.append(char)
 
 print("col1:",col1)
+
+print("(******************)")
+
+new_aray = [10,20,30,40,59,60,70]
+
+for i in new_aray:     # in this loop i value is not directly the index but the value assigned to the index
+    print(i)
+
+for i in range(0,new_aray[6]):     # here the value is the index
+    print(i)

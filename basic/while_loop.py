@@ -13,12 +13,3 @@ while(j>10):
     j=j-2
 else: 
     print("After the 'while' condition is over I am inside else")
-    
-    
-anonymous_func = lambda:(
-    print(x),
-    print("This is anonymous"),
-    print("result of additon of 1 and 2 is:", 1+2)
-)
-
-anonymous_func()
