@@ -24,3 +24,13 @@ match x:
         print("if x == str or x!= None:", x)
     case _ if x == str:
         print(" third case", x)
+        
+        
+print("*****************************************")
+
+daray = ["charlie","frankok"]
+
+if "charlie" in daray:
+    print("yes charlie is there")
+else:
+    print("no the given word is not there")
