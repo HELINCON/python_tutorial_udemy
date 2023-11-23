@@ -57,10 +57,10 @@ extended_l = original_l.copy()
 
 ext_req = (8,9,10,11)
 extended_l.extend(ext_req)
-print("extended_l:", extended_l)
+print("extended list:", extended_l)
 
 appended_l.append(8)
-print("appended_l",appended_l)
+print("appended list",appended_l)
 
 # sorting the list : sort()
 org_list = [10,50,20,60,40,70,30]
