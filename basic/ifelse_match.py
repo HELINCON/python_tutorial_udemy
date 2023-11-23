@@ -30,7 +30,7 @@ print("*****************************************")
 
 daray = ["charlie","frankok"]
 
-if "charlie" in daray:
+if "charlie" in daray:      # here it checks whether charlie is there in list daray.
     print("yes charlie is there")
 else:
     print("no the given word is not there")

@@ -48,13 +48,12 @@ print("slicing[0:1]:",sclin_nm[0:1])
 print("slicing[1:14:2]:",sclin_nm[1:15:2]) # last parameter is to skip the numbers 2 means skipping two numbers including start
 
 print('-------------------------------------')
-
+# append and extend in list
 original_l = [1,5,2,4,6,3,7]
 print("original_l",original_l)
 
 appended_l = original_l.copy()    # in python if array is not copied then the original array will be replaced
 extended_l = original_l.copy()
-
 
 ext_req = (8,9,10,11)
 extended_l.extend(ext_req)
@@ -63,7 +62,7 @@ print("extended_l:", extended_l)
 appended_l.append(8)
 print("appended_l",appended_l)
 
-# sorting the list
+# sorting the list : sort()
 org_list = [10,50,20,60,40,70,30]
 
 sorted_l = org_list.copy()
@@ -73,6 +72,14 @@ print("sorted_l in sorted order:",sorted_l)
 reversed_l = org_list.copy()
 reversed_l.sort(reverse=True)               # this list is reversed sorted. means it will come in descending order
 print("extended_l in reverse sorted order:",reversed_l)
+
+#index()
+liSt = [{'a':1},{'b':2},{'c':3},{'d':4}]
+indices_of_c = [index for index, dictionary in enumerate(liSt) if 'c' in dictionary]
+if indices_of_c:
+    print(f"The indices of dictionaries containing 'c' are: {indices_of_c}")
+else:
+    print("Key 'c' not found in any dictionary.")
 
 # ----------------------------------------------------------
 # multiply each value of list with 10
@@ -111,4 +118,23 @@ y = "y"
 z = "z"
 unquoted = [{x:1},{y:2},{z:3}]   # in dictionary we have to define the key . . either there or before.
 
-print(unquoted)
+print(f"unquoted===========>:{unquoted}")
+
+
+# formatted string 
+z = "my name is charlie"
+
+print(f"the answer to his question is {z}")
+
+# count
+li = [1,2,1,3,1,4,5]
+
+print(li.count(1))    # it counts the number of the argument's presence inside the list, thre 1 is there. so ans is 3
+
+# concatination of two lists
+lis1 = [1,2,3,4,5]
+lis2 = [100,200,300,400,500]
+print(f"concatinated list is : {lis2+lis1}")
+        # OR
+concat_list = lis1+lis2
+print(f"concatinated list is : {concat_list}")
