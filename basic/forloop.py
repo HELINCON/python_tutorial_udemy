@@ -81,11 +81,10 @@ print("col1:",col1)
 
 print("(******************)")
 
-new_aray = [10,20,30,40,59,60,70]
+new_aray = [{"a":10},{"b":20},{"c":30},{"d":40},{"e":50},{"f":60},{"g":70}]
 
-for i in new_aray:     # in this loop i value is not directly the index but the value assigned to the index
-    print(i)
-
+for i in new_aray:     # in this loop i  = {'a': 10}
+    print("iiiiiiiiiii",i)          
 for i in range(0,len(new_aray)):     # here the value is the index
     print(i)
     
