@@ -60,10 +60,11 @@ newfunc(10,20,30,40,50)
 # trick to replace or add data in a tuple without assigning it's original value to a new variable
 
 new_tuple = (1,2,3,4,5)
-lis = list(new_tuple)
-lis.extend([6,7,8])
-new_tuple = tuple(lis)
+lis = list(new_tuple)   # here tuple is converted to list to add elements or data to the tuple.
+lis.extend([6,7,8])    
+new_tuple = tuple(lis)   # then the list is converted to tuple as per its original state
 print("cdgycdycydc--->",new_tuple)
+print("lis====--->",lis)
 
 # ------------------------------------------------------
 # keyword_arbitrary_arguments
