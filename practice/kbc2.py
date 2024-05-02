@@ -28,8 +28,8 @@ def Q1():
     for question in options:                         # Iterate through the list and print the values for the specified options
      if target_question in question:
         for option in question[target_question]:
-            for key, value in option.items():        # here iteration happens inside the tuple. 
-                print(f'{key}.{value}')                         # first index key and second value
+            for option_key, option_value in option.items():        # here iteration happens inside the tuple. 
+                print(f'{option_key}. {option_value}')                         # first index key and second value
                 
     input_ans = (input("Enter the answer in block letter: ")) 
     print("The answer you enterd is: ", input_ans)
