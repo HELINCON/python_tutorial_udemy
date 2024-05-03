@@ -55,9 +55,9 @@ def Q2(total_money):
     print(questions[q_index]["Q2"])
     
     target_question = "Q2"
-    for question in options:                         # Iterate through the list and print the values for the specified options
-     if target_question in question:
-        for option in question[target_question]:
+    for question in options:                         # Iterate through the root list and print the values for the specified options
+     if target_question in question:                 # it checks if target question is inside the index tuple
+        for option in question[target_question]:     # loop in the list(array) to get the tuple(object)
             for key, value in option.items():        # here iteration happens inside the tuple. 
                 print(f'{key}. {value}')                         # first index key and second value
     input_ans = (input("Enter the answer in block letter: ")) 
